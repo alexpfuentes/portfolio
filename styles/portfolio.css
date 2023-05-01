@@ -1,8 +1,23 @@
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: radial-gradient(circle at 10% 20%, rgb(186, 190, 245) 0%, rgb(192, 192, 245) 33.1%, rgb(218, 203, 246) 90%);
+}
+
+.hero {
+  text-align: center;
+  color: white;
+}
+
 h1 {
   font-family: 'Shrikhand', cursive;
   font-weight: 600;
+  font-size: 96px;
 }
 
 h2 {
-  font-family: 'Quicksand', sans-serif;
+  font-size: 42px;
+}
+
+h3 {
+  font-size: 32px;
 }

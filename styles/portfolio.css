@@ -1,16 +1,30 @@
+:root {
+  --primary-color: rgb(51, 0, 131);
+  --secondary-color: rgb(144, 17, 105);
+  --heading-font-family: 'Shrikhand', cursive ;
+  --default-font-family: 'Quicksand', sans-serif;
+  --box-shadow: 0 0 6px #777777;
+}
+
 body {
-  font-family: 'Quicksand', sans-serif;
-  background: radial-gradient(circle at 10% 20%, rgb(186, 190, 245) 0%, rgb(192, 192, 245) 33.1%, rgb(218, 203, 246) 90%);
+  font-family: var(--default-font-family);
+  background: radial-gradient(circle at 52.1% -29.6%, var(--secondary-color) 0%, var(--primary-color) 100.2%);
+  background-attachment: fixed;
+  margin: 100px 30px 30px 30px;
 }
 
 .hero {
+  margin: 0 auto;
   text-align: center;
+  padding: 50px 30px;
   color: white;
+  background-color:  rgb(255, 255, 255, 0.5);
+  border-radius: 20px;
+  max-width: 600px;
 }
 
 h1 {
-  font-family: 'Shrikhand', cursive;
-  font-weight: 600;
+  font-family: var(--heading-font-family);
   font-size: 96px;
 }
 
@@ -20,4 +34,14 @@ h2 {
 
 h3 {
   font-size: 32px;
+  opacity: 0.8;
+}
+
+.hero a {
+  margin: 20px;
+  color: white;
+  background-color: var(--secondary-color);
+  padding: 15px 30px;
+  font-size: 18px;
+  box-shadow: var(--box-shadow);
 }

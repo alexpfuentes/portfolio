@@ -8,22 +8,18 @@
 
 body {
   font-family: var(--default-font-family);
-  margin: 100px 30px 30px 30px;
-}
-
-.homepage {
+  margin: 100px 60px 60px 60px;
   background: radial-gradient(circle at 52.1% -29.6%, var(--secondary-color) 0%, var(--primary-color) 100.2%);
   background-attachment: fixed;
 }
 
-.hero {
-  margin: 0 auto;
+.content {
   text-align: center;
-  padding: 50px 30px;
+  margin: 0 auto;
+  padding: 20px 30px;
   color: white;
   background-color:  rgb(255, 255, 255, 0.5);
   border-radius: 20px;
-  max-width: 600px;
 }
 
 h1 {
@@ -76,7 +72,17 @@ h3 {
 img {
   border-radius: 10px;
   box-shadow: var(--box-shadow);
+
 }
+.my-work img {
+  transition: all 200ms ease-in-out;
+}
+
+.my-work img:hover {
+  filter: contrast(100%);
+  transform: scale(1.1);
+}
+
 
 @media (max-width: 800px) {
   h1 {
@@ -90,7 +96,7 @@ img {
   p {
     font-size: 14px;
   }
-  .projects-description {
+  .projects-content {
     padding: 0;
     text-align: center;
   }

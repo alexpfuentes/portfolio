@@ -1,6 +1,6 @@
 :root {
-  --primary-color: rgb(51, 0, 131);
-  --secondary-color: rgb(144, 17, 105);
+  --primary-color: rgb(144, 17, 105);
+  --secondary-color: rgb(51, 0, 131);
   --heading-font-family: 'Shrikhand', cursive ;
   --default-font-family: 'Quicksand', sans-serif;
   --box-shadow: 0 0 6px #777777;
@@ -9,16 +9,18 @@
 body {
   font-family: var(--default-font-family);
   margin: 30px;
-  background: radial-gradient(circle at 52.1% -29.6%, var(--secondary-color) 0%, var(--primary-color) 100.2%);
+  color: white;
+  background: radial-gradient(circle at 52.1% -29.6%, var(--primary-color) 0%, var(--secondary-color) 100.2%);
   background-attachment: fixed;
 }
 
 nav {
-  padding: 0 20px;
+  padding: 0 40px;
 }
 
 .photo {
   max-width: 70px;
+  border-radius: 50%;
 }
 
 nav ul {
@@ -39,8 +41,8 @@ nav a {
   transition: all 100ms ease-in-out;
 }
 
-nav a:hover, 
-nav li.active a {
+ nav a:hover,  
+ nav li.active a {
  opacity: 0.8;
 }
 
@@ -61,7 +63,7 @@ h1 {
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 42px;
   opacity: 0.8;
 }
 
@@ -70,13 +72,21 @@ h3 {
   opacity: 0.8;
 }
 
+a {
+  color: white;
+}
+
 .btn-branding {
   margin: 20px;
   color: white;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   padding: 15px 30px;
   font-size: 18px;
   box-shadow: var(--box-shadow);
+}
+
+.btn-branding:hover {
+  background: var(--secondary-color);
 }
 
 img {
@@ -95,10 +105,31 @@ img {
 
 .btn-branding-outline {
   color: white;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
   padding: 10px 20px;
   font-size: 16px;
   box-shadow: var(--box-shadow);
+}
+
+.btn-branding-outline:hover {
+  background: var(--secondary-color) ;
+}
+
+.contact-box {
+  padding: 30px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: white;
+  padding: 10px 12px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  transition: all 150ms ease-in-out;
+}
+
+.social-links a:hover {
+  background-color: var(--primary-color);
 }
 
 @media (max-width: 768px) {

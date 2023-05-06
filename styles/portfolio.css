@@ -8,31 +8,65 @@
 
 body {
   font-family: var(--default-font-family);
-  margin: 100px 60px 60px 60px;
+  margin: 30px;
   background: radial-gradient(circle at 52.1% -29.6%, var(--secondary-color) 0%, var(--primary-color) 100.2%);
   background-attachment: fixed;
 }
 
+nav {
+  padding: 0 20px;
+}
+
+.photo {
+  max-width: 70px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 42px;
+  margin-left: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  transition: all 100ms ease-in-out;
+}
+
+nav a:hover, 
+nav li.active a {
+ opacity: 0.8;
+}
+
 .content {
   text-align: center;
-  margin: 0 auto;
-  padding: 20px 30px;
+  margin: 30px auto;
+  padding: 30px;
   color: white;
   background-color:  rgb(255, 255, 255, 0.5);
   border-radius: 20px;
+  max-width: 800px;
 }
 
 h1 {
   font-family: var(--heading-font-family);
   font-size: 96px;
+  line-height: 1.5;
 }
 
 h2 {
-  font-size: 42px;
+  font-size: 48px;
+  opacity: 0.8;
 }
 
 h3 {
-  font-size: 28px;
+  font-size: 24px;
   opacity: 0.8;
 }
 
@@ -45,35 +79,11 @@ h3 {
   box-shadow: var(--box-shadow);
 }
 
-.btn-branding-outline {
-  color: white;
-  background-color: var(--secondary-color);
-  padding: 10px 20px;
-  font-size: 16px;
-  box-shadow: var(--box-shadow);
-}
-
-.projects-description {
-  padding: 120px 60px;
-}
-
-.about-hero h1 {
-  font-size: 64px;
-}
-
-.about-hero h2 {
-  font-size: 24px;
-}
-
-.about-hero-content {
-  margin: 30px;
-}
-
 img {
   border-radius: 10px;
   box-shadow: var(--box-shadow);
-
 }
+
 .my-work img {
   transition: all 200ms ease-in-out;
 }
@@ -83,30 +93,57 @@ img {
   transform: scale(1.1);
 }
 
+.btn-branding-outline {
+  color: white;
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+  font-size: 16px;
+  box-shadow: var(--box-shadow);
+}
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+
+  body {
+    margin: 10px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+
   h1 {
-    font-size: 60px;
+    font-size: 64px;
   }
 
   h2 {
     font-size: 32px;
   }
 
+  h3 {
+    font-size: 16px;
+  }
+
   p {
+    font-size: 12px;
+  }
+
+  nav a{
     font-size: 14px;
   }
-  .projects-content {
-    padding: 0;
-    text-align: center;
+}
+
+@media (max-width: 576px) {
+
+  h1 {
+    font-size: 42px;
   }
 
-  .about-hero {
-    text-align: center;
-    padding: 0;
+  h2 {
+    font-size: 18px;
   }
 
-  .about-hero-content h1 {
-    font-size: 50px;
+  .btn-branding {
+    font-size: small;
+    margin-top: 0;
   }
 }

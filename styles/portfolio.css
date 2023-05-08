@@ -119,6 +119,10 @@ img {
   padding: 30px;
 }
 
+.contact a {
+  text-decoration: none;
+}
+
 .social-links a {
   margin: 0 10px;
   color: white;

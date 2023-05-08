@@ -131,10 +131,6 @@ img {
   background: var(--secondary-color);
 }
 
-.contact-box {
-  padding: 30px 80px;
-}
-
 .email {
   text-decoration: none;
   color: white;
@@ -174,6 +170,7 @@ img {
 
   h2 {
     font-size: 32px;
+    margin: -5px;
   }
 
   h3 {
@@ -184,9 +181,38 @@ img {
     font-size: 12px;
   }
 
+    nav li {
+      margin-left: 15px;
+    }
+
   nav a{
     font-size: 14px;
   }
+
+  .skills i {
+    font-size: 18px;
+  }
+
+  .skills p {
+    font-size: 11px;
+  }
+
+  .project-description {
+    margin-top: -10px;
+  }
+
+  .project-description p {
+    margin-top: -25px;
+  }
+
+  .btn-branding-outline {
+    margin-top: -10px;
+  }
+
+.email {
+  font-size: 14px;
+}
+
 }
 
 @media (max-width: 576px) {

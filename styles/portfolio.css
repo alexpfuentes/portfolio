@@ -138,6 +138,10 @@ img {
   font-size: 34px;
 }
 
+.skills p {
+  font-size: 16px;
+}
+
 @media (max-width: 768px) {
 
   body {
